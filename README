@@ -1,0 +1,24 @@
+http2irc.js - Charles Daniel
+
+Introduction
+    This script will connect to an arbitrary list of IRC servers (using node-irc) and channels. These connections will have names/aliases. Then it runs an HTTP server on whatever port and allows you to POST to the HTTP server under the /connection_name URL and the POST payload will be sent to all the IRC channels registered under that connection_name. 
+
+    Additionally it also supports "GET" where you can pass in a "topic" key/value to set the topic (provided the nick has permission to set the topic in the channel) and "message" will be the actual message that's sent to the channels in that connection_name.
+
+  Ex:   http://localhost:8888/foobar?topic=Some+Topic&message=This+is+a+Test
+
+
+Install
+    make
+
+
+Running
+    ./http2irc.js
+or
+    node http2irc -c connections.json
+
+
+For Help information
+    ./http2irc.js -h
+
+

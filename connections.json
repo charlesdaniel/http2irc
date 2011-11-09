@@ -1,0 +1,22 @@
+{
+    foobar: {
+        host: 'irc.omniti.com',
+        nick: 'post2ircbot',
+        ssl: true,
+        logincmds: [
+            //'MODE #blah +o post2ircbot'
+        ],
+        channels: [
+            '#blah', '#zab'
+        ],
+        greeting: "Hello World",
+    },
+/*
+    freenode: {
+        host: 'irc.freenode.net',
+        nick: 'post2ircobadsf',
+        channels: ['#qwerty'],
+        greeting: "Hello World",
+    }
+*/
+}
